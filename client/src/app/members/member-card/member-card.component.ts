@@ -7,22 +7,7 @@ import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./member-card.component.css']
 })
 export class MemberCardComponent implements OnInit {
-  @Input() member: Member = {
-    id: 0,
-    username: '',
-    photoUrl: '',
-    age: 0,
-    knownAs: '',
-    created: new Date(),
-    lastActive: new Date(),
-    gender: '',
-    introduction: '',
-    lookingFor: '',
-    interests: '',
-    city: '',
-    country: '',
-    photos: []
-  };
+  @Input() member!: Member;
 
   constructor() { }
 
